@@ -3,7 +3,7 @@
 A **real-time chat application** built with the **MERN Stack** and **Socket.io**, allowing private messaging, online/offline status, notifications, and profile picture uploads.
 
 **Live Demo:** [https://real-time-chat-with-leo-chat.vercel.app/](https://real-time-chat-with-leo-chat.vercel.app/)  
-**GitHub Repository:** [https://github.com/URVIL2512/Real-time-chat-with-LeoChat](https://github.com/URVIL2512/Real-time-chat-with-LeoChat)
+
 
 ---
 
@@ -59,3 +59,42 @@ This project was built as a learning and portfolio project demonstrating **front
 ```bash
 git clone https://github.com/URVIL2512/Real-time-chat-with-LeoChat.git
 cd Real-time-chat-with-LeoChat
+
+
+2. Install dependencies for frontend and backend
+
+
+
+# Frontend
+cd client
+npm install
+cd ..
+
+# Backend
+cd server
+npm install
+cd ..
+
+3. Configure Environment Variables
+
+
+
+Create a .env file in the server folder with the following:
+
+PORT=5000
+MONGO_URI=your_mongodb_connection_string
+JWT_SECRET=your_jwt_secret
+
+4. Run the application
+
+
+
+# Start backend
+cd server
+npm run dev
+
+# Start frontend (in a new terminal)
+cd client
+npm start
+
+Visit http://localhost:3000 to use the app locally.
